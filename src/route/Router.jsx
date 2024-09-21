@@ -3,6 +3,7 @@ import AuthLayout from "../layout/auth/AuthLayout";
 import HomeLayout from "../layout/auth/HomeLayout";
 import AccountPage from "../pages/AccountPage";
 import HomePage from "../pages/HomePage";
+import WhitelistPage from "../pages/WhitelistPage";
 
 function Router() {
   return (
@@ -14,6 +15,7 @@ function Router() {
         <Route path="/" element={<AuthLayout />}>
           <Route path="/account" element={<AccountPage />} />
         </Route>
+        <Route path="/whitelist" element={<WhitelistPage />}></Route>
       </Routes>
     </>
   );
