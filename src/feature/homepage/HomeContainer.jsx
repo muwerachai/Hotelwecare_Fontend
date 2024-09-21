@@ -4,7 +4,7 @@ import Categories from "../categories/Categories";
 import CardRoomItem from "./CardRoomItem";
 
 function HomeContainer() {
-  let dataMock = new Array(100).fill({
+  let dataMock = new Array(1000).fill({
     roomTitle: "Khaothong, Thailand",
     roomLocation: "Khao Phanom Bencha National Park",
     roomOpen: "Oct 27 – Nov 1",
