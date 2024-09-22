@@ -10,14 +10,13 @@ function Router() {
   return (
     <>
       <Routes>
+        <Route path="/" element={<HomeLayout />}>
+          <Route path="/" element={<HomePage />} />
+        </Route>
         <Route path="/" element={<AuthLayout />}>
-          <Route path="/" element={<HomePage />}></Route>
-          <Route path="/account" element={<AccountPage />}></Route>
-          <Route path="/whitelist" element={<WhitelistPage />}></Route>
-          <Route
-            path="/confirmPayment"
-            element={<ConfirmPaymentPage />}
-          ></Route>
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/whitelist" element={<WhitelistPage />} />
+          <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
         </Route>
       </Routes>
     </>
