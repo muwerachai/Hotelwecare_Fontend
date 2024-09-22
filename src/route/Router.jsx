@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import EmailLoginModal from "../components/Modal/EmailLoginModal";
 import LoginRegisterModal from "../components/Modal/LoginRegisterModal";
+import RegisterModal from "../components/Modal/RegisterModal";
 import PrivacyTypeContainer from "../feature/create-host/PrivacyTypeContainer";
 import PropertyTypeContainer from "../feature/create-host/PropertyTypeContainer";
 import TypeGroupContainer from "../feature/create-host/TypeGroupContainer";
@@ -27,8 +28,9 @@ function Router() {
           <Route path="/whitelist" element={<WhitelistPage />}></Route>
           <Route path="/login" element={<LoginRegisterModal />}></Route>
           <Route path="/loginEmail" element={<EmailLoginModal />}></Route>
-          <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
-          <Route path="/rooms" element={<RoomPage />} />
+          <Route path="/register" element={<RegisterModal />}></Route>
+          {/* <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
+          <Route path="/rooms" element={<RoomPage />} /> */}
         </Route>
         <Route path="/create-host">
           <Route path="intro" element={<CreateHostPage />}></Route>

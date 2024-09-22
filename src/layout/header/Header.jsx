@@ -3,7 +3,7 @@ import MenuHeader from "./MenuHeader";
 import Search from "./Search";
 function Header() {
   return (
-    <header className="  bg-cyan-200 border-b sticky top-0 left-0 right-0 h-20 flex flex-row justify-between items-center flex-nowrap">
+    <header className="z-40 px-10 bg-cyan-200 border-b sticky top-0 left-0 right-0 h-20 flex flex-row justify-between items-center flex-nowrap">
       <div className="sm:basis-1/12 md:basis-1/12 lg:basis-2/12 xl:basis-2/12 xxl:basis-2/12">
         <Logo />
       </div>
