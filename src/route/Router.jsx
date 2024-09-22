@@ -5,6 +5,7 @@ import RegisterModal from "../components/Modal/RegisterModal";
 import PrivacyTypeContainer from "../feature/create-host/PrivacyTypeContainer";
 import PropertyTypeContainer from "../feature/create-host/PropertyTypeContainer";
 import TypeGroupContainer from "../feature/create-host/TypeGroupContainer";
+import ReserveComponent from "../components/Modal/ReserveComponent";
 import AuthLayout from "../layout/auth/AuthLayout";
 import HomeLayout from "../layout/auth/HomeLayout";
 import MainContainer from "../layout/container/MainContainer";
@@ -24,29 +25,14 @@ function Router() {
           <Route path="/" element={<HomePage />} />
         </Route>
         <Route path="/" element={<HomeLayout />}>
-          <Route path="/account" element={<AccountPage />}></Route>
-          <Route path="/whitelist" element={<WhitelistPage />}></Route>
+          <Route path="/account" element={<AccountPage />} />
+          <Route path="/whitelist" element={<WhitelistPage />} />
+          <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
+          <Route path="/rooms" element={<RoomPage />} />
           <Route path="/login" element={<LoginRegisterModal />}></Route>
           <Route path="/loginEmail" element={<EmailLoginModal />}></Route>
           <Route path="/register" element={<RegisterModal />}></Route>
-          {/* <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
-          <Route path="/rooms" element={<RoomPage />} /> */}
-        </Route>
-        <Route path="/create-host">
-          <Route path="intro" element={<CreateHostPage />}></Route>
-          <Route
-            path="property-type-group"
-            element={<TypeGroupContainer />}
-          ></Route>
-          <Route
-            path="property-type/:id"
-            element={<PropertyTypeContainer />}
-          ></Route>
-          <Route
-            path="privacy-type/:id"
-            element={<PrivacyTypeContainer />}
-          ></Route>
-          <Route path="location/:id" element={<CreateHostPage />}></Route>
+          <Route path="/reserve" element={<ReserveComponent />}></Route>
         </Route>
       </Routes>
     </>
