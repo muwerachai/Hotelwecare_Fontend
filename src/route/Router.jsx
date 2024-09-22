@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import ReserveComponent from "../components/ReserveComponent";
 import AuthLayout from "../layout/auth/AuthLayout";
 import HomeLayout from "../layout/auth/HomeLayout";
 import AccountPage from "../pages/AccountPage";
@@ -17,6 +18,7 @@ function Router() {
           <Route path="/account" element={<AccountPage />} />
           <Route path="/whitelist" element={<WhitelistPage />} />
           <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
+          <Route path="/reserve" element={<ReserveComponent />} />
         </Route>
       </Routes>
     </>
