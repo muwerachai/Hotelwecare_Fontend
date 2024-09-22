@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import EmailLoginModal from "../components/Modal/EmailLoginModal";
 import LoginRegisterModal from "../components/Modal/LoginRegisterModal";
+import PhoneAuthModal from "../components/Modal/PhoneAuthModal";
 import RegisterModal from "../components/Modal/RegisterModal";
 import PrivacyTypeContainer from "../feature/create-host/PrivacyTypeContainer";
 import PropertyTypeContainer from "../feature/create-host/PropertyTypeContainer";
@@ -33,6 +34,7 @@ function Router() {
           <Route path="/loginEmail" element={<EmailLoginModal />}></Route>
           <Route path="/register" element={<RegisterModal />}></Route>
           <Route path="/reserve" element={<ReserveComponent />}></Route>
+          <Route path="/phoneAuth" element={<PhoneAuthModal />}></Route>
         </Route>
       </Routes>
     </>
