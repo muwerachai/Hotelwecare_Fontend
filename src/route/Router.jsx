@@ -12,6 +12,7 @@ import ConfirmPaymentPage from "../pages/ConfirmPaymentPage";
 import CreateHostPage from "../pages/CreateHostPage";
 
 import HomePage from "../pages/HomePage";
+import RoomPage from "../pages/RoomPage";
 import WhitelistPage from "../pages/WhitelistPage";
 
 function Router() {
@@ -19,12 +20,15 @@ function Router() {
     <>
       <Routes>
         <Route path="/" element={<AuthLayout />}>
-          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/" element={<HomePage />} />
+        </Route>
+        <Route path="/" element={<HomeLayout />}>
           <Route path="/account" element={<AccountPage />}></Route>
           <Route path="/whitelist" element={<WhitelistPage />}></Route>
           <Route path="/login" element={<LoginRegisterModal />}></Route>
           <Route path="/loginEmail" element={<EmailLoginModal />}></Route>
-          <Route path="confirmPayment" element={<ConfirmPaymentPage />}></Route>
+          <Route path="/confirmPayment" element={<ConfirmPaymentPage />} />
+          <Route path="/rooms" element={<RoomPage />} />
         </Route>
         <Route path="/create-host">
           <Route path="intro" element={<CreateHostPage />}></Route>
