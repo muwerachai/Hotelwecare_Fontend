@@ -11,6 +11,7 @@ import AuthLayout from "../layout/auth/AuthLayout";
 import HomeLayout from "../layout/auth/HomeLayout";
 import MainContainer from "../layout/container/MainContainer";
 import AccountPage from "../pages/AccountPage";
+import BecomeHostPage from "../pages/BecomeHostPage";
 import ConfirmPaymentPage from "../pages/ConfirmPaymentPage";
 import CreateHostPage from "../pages/CreateHostPage";
 
@@ -35,6 +36,7 @@ function Router() {
           <Route path="/register" element={<RegisterModal />}></Route>
           <Route path="/reserve" element={<ReserveComponent />}></Route>
           <Route path="/phoneAuth" element={<PhoneAuthModal />}></Route>
+          <Route path="/becomeHosting" element={<BecomeHostPage />}></Route>
         </Route>
       </Routes>
     </>
