@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import CardProperty from "../../components/CardProperty";
 import ConfirmForm from "../../components/ConfirmForm";
+import loadOmise from "./scripts/loadOmise";
+
 function ConfirmPaymentContainer() {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(() => {
+    loadOmise(() => {
+      setLoaded(true);
+    });
+  });
   return (
     <div className="min-w-full min-h-screen  flex flex-col items-center">
       <div className="flex flex-col">
@@ -14,7 +22,7 @@ function ConfirmPaymentContainer() {
           </div>
         </div>
         <div className="flex flex-row gap-32">
-          <ConfirmForm />
+          {loaded ? <ConfirmForm /> : ""}
           <CardProperty />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import React from "react";
-function BecomeHostHelpUkrain() {
+function BecomeHostHelpUkrane() {
   return (
     <div className="">
       <div className=" bg-pink-bnb  text-white  text-center h-[450px] mx-[60px] rounded-xl mt-[70px] flex flex-col justify-center">
@@ -17,4 +17,4 @@ function BecomeHostHelpUkrain() {
     </div>
   );
 }
-export default BecomeHostHelpUkrain;
+export default BecomeHostHelpUkrane;
