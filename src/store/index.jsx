@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
-import AdultsChildCounter from "./AdultsChildCounter";
+import ReserveCounterReducer from "./ReserveCounterSlice";
 export const store = configureStore({
   reducer: {
-    counter: AdultsChildCounter
+    reserveCounter: ReserveCounterReducer
   }
 });
